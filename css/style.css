@@ -49,7 +49,8 @@ header nav .menu { /* Nav ul li a */
     height: 80vh;/* sehr wichtig!!! */
     background-repeat: no-repeat;
     position: relative; 
-    background-attachment: fixed;
+    background-attachment:sticky;
+    background-position: 100% 55% ; /* bild in der position befestigen */
     /* background-position: left 10px;???wie kann man ohne fixen bild in die position bringen??? */
 } /* Annika */
 
