@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0; 
+    border: 0;
+}
+header { width: 100%; 
+list-style: none ;
+padding: 50px;/* abstand zur oberen Kante */
+padding-bottom: 1%;
+display: block;
+margin: 35px 0px 0px 0px;
+text-align: center;
+font-family: "chrysante"; /* mein schrift den ich runtergeladen habe */
+font-style: italic;
+font-size:medium;
+font-weight: 100;
+color: rgb(0, 0, 0);
+} 
+ul {list-style: none;
+    text-align: center ;
+    font-family: Arial, Helvetica, sans-serif;}
+li {display: inline; /* um HOME und andere Links horizontal zu platzieren */
+    margin-right: 40px;} /* abstand zwischen den Links mehr machen */
+a { display: inline-block;
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    } 
+h2 {
+    font-family: "Playfair Display SC', serif";
+    position: relative; /* um Überschrift auf dem Bild zu bewegen */
+    color: rgba(255, 255, 255, 0.776);
+    font-size: small;
+    font-weight: 100; /* schrift dünner */
+    bottom: -180px;
+    left: 120px;
+}
+figure {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: center;
+    margin-top: 2%;
+    background-color: rgba(205, 205, 205, 0.495);
+}
+@font-face { /* mein Schrift */
+    font-family: "chrysante";  
+    src: url("../fonts/Chrysante/ChrysantepersonaluseBold.ttf") 
+    format("truetype"); 
+    }
+h5 {padding-top:20px ;  
+    position: relative; /* um Überschrift auf dem Bild zu bewegen */
+    color: rgba(0, 0, 0, 0.776);
+    font-size: larger;
+    text-align: center;
+    font-weight: 100;
+}
+p {margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 2%;
+    display: block;
+    width: 40%;
+    line-height: 1.8;
+    float: center;
+    font-size:medium;
+    font-weight: 100;
+    color: rgb(0, 0, 0);}
+img {
+height: 300px;
+float: right;
+margin-right: 50px;
+margin-top: -220px;}
+    

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+header { width: 100%; 
+    list-style: none ;
+    padding: 10vh 0 1vh 0;/* abstand zur oberen Kante */
+    display: block;
+    
+    text-align: center;
+    font-family: "chrysante"; /* mein schrift den ich runtergeladen habe */
+    font-style: italic;
+    font-size:medium;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    } 
+    
+    ul {list-style: none;
+        text-align: center ;
+        font-family: Arial, Helvetica, sans-serif;}
+    li {display: inline; /* um HOME und andere Links horizontal zu platzieren */
+        margin-right: 40px;} /* abstand zwischen den Links mehr machen */
+    a { display: inline-block;
+        text-decoration: none;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        } 
+    main h2 {
+        display: flex;
+        gap: 1%;
+        font-family: "Playfair Display SC', serif";
+        position: absolute; /* um Überschrift auf dem Bild zu bewegen */
+        padding: 10vw 0 10vh;
+    
+        color: rgba(255, 255, 255, 0.776);
+        font-size: small;
+        font-weight: 100; /* schrift dünner */
+        
+    }
+    .hero-image {
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: center;
+        margin-top: 2%;
+        background-image: url(../bilder/3000pix/schwarzweiß\ cover-1.jpg);
+        position: relative;
+    }
+    img {
+        display: inline-block;
+        width: 20%;
+        margin: 70px 200px 10px;
+        position:absolute;
+        right: 3cm;/* cm besser nicht benutzen */
+        }
+    h3 {position: absolute; /* Über Elvira */
+        left: 7cm;
+        list-style: none ;
+        display: block;
+        font-family: "chrysante";
+        font-size:xx-large;
+        width: 200px;
+        margin: 70px 100px 0 100px;
+        float:right;
+       }
+    p { display: block;
+        width: 400px;
+        margin: 100px 230px 30px;
+        padding: 1%;
+        line-height: 1.8; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+    footer {
+        display:flex;
+        position: relative;
+        left: 200px;
+        font-size: small;
+    }
+    
+    @font-face { /* mein Schrift */
+    font-family: "chrysante";  
+    src: url("../fonts/Chrysante/ChrysantepersonaluseBold.ttf") 
+    format("truetype"); 
+    }

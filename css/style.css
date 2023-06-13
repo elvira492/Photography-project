@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    } /* ein muss */
+
+:root {
+    font-size: 62.5%;
+} /* ein muss von Tokio seite? */
+
+header {
+    width: 100%;
+    margin: 10vh 0 5vh 0; 
+    font-size: 1.4em;
+}
+
+header h1 { /* Elvira Dederer Fotografie */
+display: flex;
+justify-content: center;
+font-family: "chrysante";
+font-style: italic;
+color: rgb(37, 21, 21);
+padding-bottom:15px;
+font-size: 2.5em;
+}
+
+header nav .menu { /* Nav ul li a */
+    display: flex; /* horizontal im zenter */
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5vw;
+    list-style-type: none;/* ohne li pünktchen */
+    }
+
+.menu :hover {background-color: rgba(131, 122, 98, 0.329);/* farbe ändert sich mit maus over */
+    border-radius: 1.5px;
+}
+.menu a {
+    color: black;
+    text-decoration: none ;/* ohne unterschtrich */
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.hero-image {
+    background-image: url(../bilder/3000pix/schwarzweiß\ cover-1.jpg);
+    background-size: cover;
+    height: 80vh;/* sehr wichtig!!! */
+    background-repeat: no-repeat;
+    position: relative; 
+    background-attachment: fixed;
+    /* background-position: left 10px;???wie kann man ohne fixen bild in die position bringen??? */
+} /* Annika */
+
+.hero-image h2 {
+    color: rgba(255, 255, 255, 0.776);
+    margin: 25vh 25vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 30%;
+}/* "Es ist eine Begegnung mit sich selbst gewesen" */
+
+.meplustext {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin: 15rem 20vw;
+}
+
+.meplustext img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit:contain;/*  damit bild nicht verzehrt ist */
+}
+
+.meplustext .me{
+    font-family: "chrysante";/* mein google schrift */
+    text-align: center;
+    font-size: 3.1rem;
+    }
+.meplustext p{
+    font-size: 2rem;
+    line-height: 1.8; /* abstand zwischen den zeilen */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 40ch;
+    
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5vw;   
+}
+
+.contactme a {
+    color: black;
+    text-decoration: none ;/* ohne unterschtrich */
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.icons a {
+    color: black;
+    padding: 10px;
+    font-size: 2rem;
+}
+@font-face { /* mein Schrift */
+font-family: "chrysante";  
+src: url("../fonts/Chrysante/ChrysantepersonaluseBold.ttf") 
+format("truetype"); 
+}
