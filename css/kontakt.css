@@ -1,49 +1,96 @@
-h1 {text-align: left; /* text im center */
-    width: 50%;
-    padding-top: 50px;
-    background-color: rgba(255, 255, 255, 0.499);
-    font-family: "Playfair Display SC";
-    font-size: 20px;
-    text-decoration: none;
-    margin: 2%;
-    padding: 1%;
-    
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0; 
+    border: 0;
 }
-section {
-    background-color: rgba(255, 255, 255, 0.687);
-    width: 20%; /* verkleinern rahmen auf 25%. 100% das ist standart */
-    text-align: right;
-    margin-left: 1px; 
-  }
-body {
-    width: 200%;    
+header { width: 100%; 
+list-style: none ;
+padding: 50px;/* abstand zur oberen Kante */
+padding-bottom: 1%;
+display: block;
+margin: 35px 0px 0px 0px;
+text-align: center;
+font-family: "chrysante"; /* mein schrift den ich runtergeladen habe */
+font-style: italic;
+font-size:medium;
+font-weight: 100;
+color: rgb(0, 0, 0);
+} 
+
+ul {list-style: none;
+    text-align: center ;
+    font-family: Arial, Helvetica, sans-serif;}
+li {display: inline; /* um HOME und andere Links horizontal zu platzieren */
+    margin-right: 40px;} /* abstand zwischen den Links mehr machen */
+a { display: inline-block;
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    } 
+h2 {
+    font-family: "Playfair Display SC', serif";
+    position: relative; /* um Überschrift auf dem Bild zu bewegen */
+    color: rgba(255, 255, 255, 0.776);
+    font-size: small;
+    font-weight: 100; /* schrift dünner */
+    bottom: -180px;
+    left: 120px;
+}
+figure {
+    height: 600px;
     background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
-        margin-top: 6%;
-        position:fixed;
-        color: rgb(65, 63, 63);
-        margin-left: 50px;
-        }
-img {
-    padding: 1%;
-    height:200px;
-    margin-left: -130px;
-    margin-top: 10px;
-    border-bottom-right-radius: 0cm;
-}
-a {
-    text-decoration: none;
-    display: inline-block; /* damit text mit padding gut aussieht */
-    font-size: 24px;
-    text-decoration: none;
-    background-color: rgb(194, 231, 185);
-    color: rgb(188, 14, 81);
-    padding: 90px 30px 20px 30px;/* abstand zwischen rand box und dem text */
-    /* 20px 30px wird als quadrat aussehen */
-    border: 2px solid red;
-    display: inline-block;
-    width: 20%;
-    margin: 15px;
+    background-position: center;
+    background-attachment: center;
+    margin-top: 2%;
+    background-color: rgba(205, 205, 205, 0.495);
 }
 
+
+@font-face { /* mein Schrift */
+    font-family: "chrysante";  
+    src: url("../fonts/Chrysante/ChrysantepersonaluseBold.ttf") 
+    format("truetype"); 
+    }
+   /* alles nach oben ist das gleiche wie bei jedem page:menu, elvira dederer fotografie */ 
+
+
+div.hintergrund { /* grauer Hintergrund */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: sticky;
+    margin-top: 2%;
+    background-color: rgba(205, 205, 205, 0.495);
+    position: relative;
+}
+
+
+
+img { /* me */
+    width: 300px ;
+    position: absolute;
+    right: 30px;
+    top: 3vh;
+    
+}
+
+
+.text h1 {padding-top:20px ;   /* abschnitt mit text */
+    position: relative; /* um Überschrift auf dem Bild zu bewegen */
+    color: rgba(0, 0, 0, 0.776);
+    font-size: larger;
+    text-align: center;
+    font-weight: 100;
+}
+.text p {margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 2%;
+    display: block;
+    width: 40%;
+    line-height: 1.8;
+    float: center;
+    font-size:medium;
+    font-weight: 100;
+    color: rgb(0, 0, 0);}
