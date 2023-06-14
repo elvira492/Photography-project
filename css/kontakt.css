@@ -38,15 +38,8 @@ h2 {
     bottom: -180px;
     left: 120px;
 }
-figure {
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: center;
-    margin-top: 2%;
-    background-color: rgba(205, 205, 205, 0.495);
-}
 
+/* nach oben Menu */
 
 @font-face { /* mein Schrift */
     font-family: "chrysante";  
@@ -66,42 +59,67 @@ div.hintergrund { /* grauer Hintergrund */
     position: relative;
 }
 
-
-
 img { /* me */
     width: 300px ;
     position: absolute;
-    right: 30px;
-    top: 3vh;
+    right: 4vw;
+    margin-top: 2vh;
     
 }
 
 
-.text h1 {padding-top:20px ;   /* abschnitt mit text */
+.hintergrund h1 {padding-top:20px ;   /* h1 Kontaktiere mich */
     position: relative; /* um Überschrift auf dem Bild zu bewegen */
     color: rgba(0, 0, 0, 0.776);
     font-size: larger;
     text-align: center;
     font-weight: 100;
 }
-.text p {margin-top: 50px;
-    margin-left: 50px;
-    padding-left: 2%;
-    display: block;
-    width: 40%;
+.text p {
+    margin-top: 40px; /* text */
+    position: absolute;
+       
+    margin-left: 4vw;
+    min-width: 70vw;
+    height: 20vh;
     line-height: 1.8;
-    float: center;
     font-size:medium;
     font-weight: 100;
-    color: rgb(0, 0, 0);}
+    color: rgba(0, 0, 0, 0.776);}
+
+/* Form unten: */
 
 
-#kontakt {
-    text-decoration: none;
-   
+form { /* wie mache ich es in center??? */
+	margin-left: 4vw;
+    margin-top: 2vh;
+    display: flex;
+	flex-flow: column;
+    width: 80%;
+    
 }
-#kontakt:hover {
-    color: rgb(16, 54, 11);
-    background-color: rgba(229, 148, 148, 0.541);
-    border-radius: 1%;
+label {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* clip -bilder abschneiden */
+  
 }
+.field1, .field2, button {
+    width: 50%;
+}
+
+.field1, .field2, textarea {
+	margin: 0 .5em 1em 0;
+	padding: .5em 1em;
+	border: 1px solid #CCC;
+}
+
+.textarea {
+	width: 50%;
+    height: 200px;
+}
+.button {
+	padding: .5em 1em;
+	border: 1px solid #CCC;
+	background-color: rgb(214, 206, 206);
+	color: #FFF;
+    }
