@@ -94,3 +94,14 @@ img { /* me */
     font-size:medium;
     font-weight: 100;
     color: rgb(0, 0, 0);}
+
+
+#kontakt {
+    text-decoration: none;
+   
+}
+#kontakt:hover {
+    color: rgb(16, 54, 11);
+    background-color: rgba(229, 148, 148, 0.541);
+    border-radius: 1%;
+}
